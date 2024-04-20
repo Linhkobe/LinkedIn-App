@@ -1,0 +1,64 @@
+<div class="chart-container">
+  <div class="dashboard-info" *ngFor="let info of dashboardInfo">
+    <div class="info-square">
+      <p>{{ info.label }}</p>
+      <h2>{{ info.value }}</h2>
+    </div>
+  </div>
+  <button mat-raised-button (click)="openDialog()" class="chart-generator-button" style="float: right;">
+    Chart Generator
+  </button>
+  <div id="selectedChartsContainer"></div>
+  <ng-template #dialogTemplate>
+    <div class="chart-options">
+      <div *ngFor="let chart of charts">
+        <label>
+          <input type="checkbox" [(ngModel)]="chart.enabled" />
+          {{ chart.name }}
+        </label>
+        <div class="chart-options-row">
+          <select [(ngModel)]="chart.type">
+            <option *ngIf="chart.name !== 'Durée d\'expérience'" value="bar">Bar</option>
+            <option *ngIf="chart.name !== 'Durée d\'expérience' && chart.name !== 'Année d\'obtention du diplôme'" value="pie">Pie</option>
+            <option *ngIf="chart.name !== 'Durée d\'expérience'" value="line">Line</option>
+            <option *ngIf="chart.name !== 'Année d\'obtention du diplôme' && chart.name !=='Top Domain' 
+            && chart.name!=='Top Entreprises' && chart.name!=='Top Competences'" value="boxplot">Boxplot</option>
+          </select>
+          <input
+            *ngIf="chart.name !== 'Top Domain' && chart.name !== 'Année d\'obtention du diplôme'
+            && chart.name !== 'Durée d\'expérience'"
+            type="number"
+            [(ngModel)]="chart.limit"
+            min="1"
+          />
+        </div>
+      </div>
+      <button (click)="showSelectedCharts()">Afficher</button>
+      <button (click)="resetCharts()">Réinitialiser</button>
+    </div>
+    
+  </ng-template>
+
+  <div class="chart" *ngIf="competenceChart">
+    <canvas id="competenceChart"></canvas>
+  </div>
+  <div class="chart pie-chart" *ngIf="entrepriseChart">
+    <canvas id="entrepriseChart"></canvas>
+  </div>
+  <div class="chart" *ngIf="domainChart">
+    <canvas id="domainChart"></canvas>
+  </div>
+  <div class= "chart" *ngIf="yeardiplomeChart">
+    <canvas id="yeardiplomeChart"></canvas>
+  </div>
+  <div class="chart" *ngIf="dureejobChart">
+    <canvas id="dureejobChart">
+  </canvas>
+
+  <!-- <div class="jobchart">
+    <canvas id="jobChart"></canvas>
+  </div>
+  <div class="niveauEtudeChart">
+    <canvas id="niveauEtudeChart"></canvas>
+  </div>
+</div>  -->

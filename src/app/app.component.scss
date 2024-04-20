@@ -1,0 +1,125 @@
+.custom-button {
+  background-color: #3498db;
+  color: #fff;
+  margin-left: auto;
+}
+
+.login {
+  background-color: beige;
+  color: black;
+  margin-left: auto;
+}
+mat-sidenav-container {
+  height: 800px;
+  background-color:white;
+}
+
+mat-sidenav {
+  width: 180px;
+  background-color:azure;
+  align-self: center;
+}
+
+.active-link {
+  background-color:aquamarine;
+  color: white;
+  display:flex;
+  width: 100%;
+}
+
+.link {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: normal;
+  overflow: hidden;
+  // color:black;
+  color: inherit;
+  width: 100%;
+}
+mat-list-item:hover{
+  background-color: white;
+}
+/* app.component.scss */
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+
+  h2 {
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}
+.logo-img {
+  margin: 0.5rem 2rem;
+  width: 16rem;
+}
+
+@font-face {
+  font-family: 'AmaticSC-Regular';
+  src: url('/assets/Fonts/AmaticSC-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('/assets/Fonts/Roboto-Black.ttf');
+}
+.title_app{
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 2rem;
+  font-family: Arial, sans-serif;
+  color: #3E4D51;
+}
+.custom-button {
+  background-color:aquamarine ;
+  color: #fff;
+  margin-left: auto;
+  text-decoration: none;
+}
+.menu {
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Roboto-Black;
+  background-color: white;
+}
+
+.header_elem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar{
+  background-color:darkcyan;
+}
+
+mat-divider{
+  border: 0.5px #CFD2D2 solid;
+  border-radius: 12px;
+}
+

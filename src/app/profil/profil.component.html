@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>LinkedIn URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let profile of profiles">
+      <td>{{ profile.id_profil }}</td>
+      <td>{{ profile.name }}</td>
+      <td><a href="{{ profile.linkedin_url }}" target="_blank">{{ profile.linkedin_url }}</a></td>
+    </tr>
+  </tbody>
+</table>

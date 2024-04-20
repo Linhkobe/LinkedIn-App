@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id_entreprise</th>
+      <th>Nom_entreprise</th>
+      <th>url_entreprise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let entreprise of entreprises">
+      <td>{{ entreprise.id_entreprise }}</td>
+      <td>{{ entreprise.nom }}</td>
+      <td>{{ entreprise.url_entreprise }}</td>
+    </tr>
+  </tbody>
+</table>
+

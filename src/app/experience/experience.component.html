@@ -1,0 +1,31 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id_exp</th>
+      <th>id_profil</th>
+      <th>titre_poste</th>
+      <th>domaine</th>
+      <th>date_debut</th>
+      <th>date_fin</th>
+      <th>duree</th>
+<!--       <th>url_company</th>
+      <th>name_company</th> -->
+      <th>id_ville</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let experience of experiences">
+      <td>{{ experience.id_exp }}</td>
+      <td>{{ experience.id_profil }}</td>
+      <td>{{ experience.titre_poste }}</td>
+      <td>{{experience.domaine}}</td>
+      <td>{{ experience.date_debut }}</td>
+      <td>{{ experience.date_fin }}</td>
+      <td>{{ experience.duree }}</td>
+<!--       <td>{{ experience.url_company }}</td>
+      <td>{{ experience.name_company }}</td> -->
+      <td>{{ experience.id_ville }}</td>
+    </tr>
+  </tbody>
+</table>
+

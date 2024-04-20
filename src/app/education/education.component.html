@@ -1,0 +1,30 @@
+<table *ngIf="educations.length; else loadingOrEmpty">
+  <thead>
+    <tr>
+      <th>Id_edu</th>
+      <th>Id_profil</th>
+      <th>nom_ecole</th>
+      <th>date_debut</th>
+      <th>date_fin</th>
+      <th>etape_diplome</th>
+      <th>niveau</th>
+      <th>annee_diplome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let education of educations">
+      <td>{{ education.id_edu }}</td>
+      <td>{{ education.id_profil }}</td>
+      <td>{{ education.nom_ecole }}</td>
+      <td>{{ education.date_debut }}</td>
+      <td>{{ education.date_fin }}</td>
+      <td>{{ education.etape_diplome }}</td>
+      <td>{{education.niveau}}</td>
+      <td>{{education.annee_diplome}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #loadingOrEmpty>
+  <p>No education data available.</p>
+</ng-template>

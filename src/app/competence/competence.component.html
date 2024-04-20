@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id_competence</th>
+      <th>Nom_competence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let competence of competences">
+      <td>{{ competence.id_competence }}</td>
+      <td>{{ competence.nom_competence }}</td>
+    </tr>
+  </tbody>
+</table>
+

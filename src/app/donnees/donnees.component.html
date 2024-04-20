@@ -1,0 +1,29 @@
+<!-- donnees.component.html -->
+<ng-container *ngIf="sharedService.showTabs$ | async">
+  <mat-tab-group>
+    <mat-tab label="Profil"> Profil
+      <app-profil></app-profil>
+    </mat-tab>
+    <mat-tab label="Education"> Education
+      <app-education></app-education>
+    </mat-tab>
+    <mat-tab label="Experience"> Expérience pro
+      <app-experience></app-experience>
+    </mat-tab>
+    <mat-tab label="Compétences"> Compétences
+      <app-competence></app-competence>
+    </mat-tab>
+    <mat-tab label="Entreprise"> Entreprise
+      <app-entreprise></app-entreprise>
+    </mat-tab>
+    <!-- <mat-tab label="Experience_entreprise"> Expérience entreprise
+      <app-expeentre></app-expeentre>
+    </mat-tab> -->
+<!--     <mat-tab label="Experience_competence"> Expérience competence
+      <app-expecompe></app-expecompe>
+    </mat-tab> -->
+    <mat-tab label="Ville"> Ville
+      <app-ville></app-ville>
+    </mat-tab>
+  </mat-tab-group>
+</ng-container>
