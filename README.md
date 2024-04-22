@@ -10,7 +10,7 @@
      . Front-end avec Angular
      . Back-end avec Python (Flask)
      . Base de données avec phpMyAdmin (en utilisant MAMP - une pile de logiciels qui permet l'utilisation d'un serveur Web local).
-## 3) Diagramme de flux du processusde scraping LinkedIn : 
+## 3) Diagramme de flux du processus de scraping LinkedIn : 
 <img width="317" alt="Screenshot 2024-04-22 at 11 07 33" src="https://github.com/Linhkobe/Linkedin-App/assets/84924997/cbf136bb-625f-4af3-8481-5b5cfe272450">
 
 ## 4) Le résultat - la démo du projet : 
