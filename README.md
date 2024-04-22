@@ -16,4 +16,5 @@
 ## 4) Le résultat - la démo du projet : 
 ### a) Résultat/ rapport : 
 [Rapport projet tuteure.pdf](https://github.com/Linhkobe/Linkedin-App/files/15060598/Rapport.projet.tuteure.pdf)
-### b) La démo : 
+### b) La démo par une vidéo sur ma chaîne Youtube :
+https://youtu.be/CPBj6ruOYzo?si=3nvr7016o-BZrHp8 
